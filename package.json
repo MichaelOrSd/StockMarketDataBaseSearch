@@ -41,5 +41,8 @@
     "url": "https://github.com/MichaelOrSd/Sprint2_SD3/issues"
   },
   "homepage": "https://github.com/MichaelOrSd/Sprint2_SD3#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
