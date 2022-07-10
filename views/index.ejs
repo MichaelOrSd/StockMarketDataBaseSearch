@@ -1,0 +1,14 @@
+<html>
+  <%- include('./partials/header.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <main>
+      <h1>Hi <%= user[0].username || user[0][0].username %></h1>
+      <p>Please choose a database to search Stock Market information.</p> </br>
+      <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit">Log Out</button>
+      </form>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

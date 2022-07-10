@@ -1,0 +1,88 @@
+<!-- DON'T SAVE W/ PRETTIER ENABLED -->
+<html>
+  <%- include('./partials/header.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <main>
+      <h1 id="bothh1">Search MongoDB & PostgreSQL Databases</h1>
+      <form action="/both" method="POST">
+        <div>
+          <label id="bothlabel" for="search">Stocks</label>
+        </div>
+        <div>
+          <input
+            id="searchboth"
+            type="search"
+            id="search"
+            name="search"
+            required
+          />
+        </div>
+        <button id="bothbutton" type="submit">Search</button>
+        <p id="error">
+          <% if(messages.error) { %> <%= messages.error %> <% } %>
+        </p>
+      </form>
+      <div id="filter">
+        <p id="p1"><strong>MARKET</strong></p>
+        <p id="bothp2" class="stockName"><strong>NAME</strong></p>
+        <p id="bothp3" class="stockSymbol"><strong>SYMBOL</strong></p>
+        <p id="bothp4"><strong>CAP</strong></p>
+      </div>
+      <div id="resultContainer">
+        <% if(easterEgg) { %> 
+          <img src="<%= easterEgg %>" /> 
+        <% } %>
+        <% if (stockName.length > 0) { %> <% stockName.forEach(stock=>{%>
+        <div class="stockInfo">
+          <p><%= stock.stock_market %></p>
+          <div class="stockName"><p><%= stock.stock_name %></p></div>
+          <div class="stockSymbol"><p><%= stock.stock_symbol %></p></div>
+          <p><%= stock.stock_cap %></p>
+        </div>
+        <% }) %> <% } %> <% if ( market.length > 0) { %>
+        <%market.forEach(stock=>{%>
+        <div class="stockInfo">
+          <p><%= stock.stock_market %></p>
+          <div class="stockName"><p><%= stock.stock_name %></p></div>
+          <div class="stockSymbol"><p><%= stock.stock_symbol %></p></div>
+          <p><%= stock.stock_cap %></p>
+        </div>
+        <% }) %> <% } %> <% if ( symbol.length > 0) { %>
+        <%symbol.forEach(stock=>{%>
+        <div class="stockInfo">
+          <p><%= stock.stock_market %></p>
+          <div class="stockName"><p><%= stock.stock_name %></p></div>
+          <div class="stockSymbol"><p><%= stock.stock_symbol %></p></div>
+          <p><%= stock.stock_cap %></p>
+        </div>
+        <% }) %> <% } %> <% if (searchByMarket.length > 0) { %>
+        <%searchByMarket.forEach(stock=>{%>
+        <div class="stockInfo">
+          <p><%= stock.stock_market %></p>
+          <div class="stockName"><p><%= stock.stock_name %></p></div>
+          <div class="stockSymbol"><p><%= stock.stock_symbol %></p></div>
+          <p><%= stock.stock_cap %></p>
+        </div>
+        <% }) %> <% } %> <% if ( searchByName.length > 0) { %>
+        <%searchByName.forEach(stock=>{%>
+        <div class="stockInfo">
+          <p><%= stock.stock_market %></p>
+          <div class="stockName"><p><%= stock.stock_name %></p></div>
+          <div class="stockSymbol"><p><%= stock.stock_symbol %></p></div>
+          <p><%= stock.stock_cap %></p>
+        </div>
+        <% }) %> <% } %> <% if ( searchBySymbol.length > 0) { %> 
+        <%searchBySymbol.forEach(stock=>{%>
+        <div class="stockInfo">
+          <p><%= stock.stock_market %></p>
+          <div class="stockName"><p><%= stock.stock_name %></p></div>
+          <div class="stockSymbol"><p><%= stock.stock_symbol %></p></div>
+          <p><%= stock.stock_cap %></p>
+        </div>
+        <% }) %> <% } %>
+      </div>
+      <%- include('./partials/footer.ejs') %>
+    </main>
+  </body>
+</html>

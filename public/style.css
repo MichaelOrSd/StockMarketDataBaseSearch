@@ -1,0 +1,378 @@
+body {
+  margin: 0px;
+  padding: 0 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*********** LOGIN **********/
+
+button:hover {
+  cursor: pointer;
+}
+
+#loginhtml {
+  background-color: #c4c4c4;
+}
+
+#loginheader {
+  font-family: 'Righteous', sans-serif;
+  font-size: 3em;
+  padding-top: 0;
+}
+
+#loginlabels {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#loginbutton {
+  font-size: 1em;
+  margin-bottom: 50px;
+}
+
+#register {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 1.5em;
+}
+
+/*********** REGISTER ***********/
+
+#registerhtml {
+  background-color: #c4c4c4;
+}
+
+#registerh1 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 3em;
+  padding-top: 0;
+}
+
+#registerlabels {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#registerbutton {
+  font-size: 1em;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#login {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 1.5em;
+}
+
+a:hover {
+  color: grey;
+}
+p,
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #222;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* nav & footer styles */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding-bottom: 40px; */
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  background: #c4c4c4;
+  font-family: 'Righteous', sans-serif;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+nav h1 {
+  font-size: 3em;
+}
+nav p,
+nav a {
+  color: #777;
+  font-weight: 300;
+}
+
+.navCent {
+  display: flex;
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Righteous', sans-serif;
+}
+
+main {
+  padding-top: 98px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+main h1 {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+main p {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+
+/********* MONGO SEARCH **********/
+
+#mongoh1 {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 2em;
+  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+#label {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#searchmongo {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#mongobutton {
+  margin-left: 20px;
+}
+
+#mongop2 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding-right: 160px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+}
+
+#mongop3 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding-right: 150px;
+  padding-bottom: 20px;
+}
+
+#mongop4 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+#mongoresults {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/**********  POSTGRES ***********/
+
+#postgresh1 {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 2em;
+  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+#postgreslabel {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#searchpostgres {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#postgresbutton {
+  margin-left: 20px;
+}
+
+.stockInfo {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 1em;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#p1 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding-left: 25px;
+  padding-right: 100px;
+}
+
+#p2 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding-right: 160px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+}
+
+#p3 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding-right: 150px;
+  padding-bottom: 20px;
+}
+
+#p4 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+/*********** BOTH DATABASES **********/
+
+#bothh1 {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 2em;
+  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+#bothlabel {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#searchboth {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#bothbutton {
+  margin-left: 20px;
+}
+
+#bothp2 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding-right: 160px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+}
+
+#bothp3 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding-right: 150px;
+  padding-bottom: 20px;
+}
+
+#bothp4 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2em;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+#resultContainer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.stockInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stockName {
+  width: 500px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.stockSymbol {
+  width: 185px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+#error {
+  color: red;
+}
+
+#footer {
+  color: #777;
+  text-align: center;
+  margin: 80px auto 20px;
+  font-family: 'Cookie', sans-serif;
+  font-size: 1.5em;
+}
+
+/*********** ERROR 404 **********/
+.lostContent {
+  font-family: 'BIZ UDPMincho', sans-serif;
+  /* padding-top: 100px;
+  padding-bottom: 10px; */
+}
